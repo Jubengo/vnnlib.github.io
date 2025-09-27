@@ -1,3 +1,4 @@
-VNNLIB.org
+VNN-LIB website
+===============
 
-Template courtesy of startbootstrap.com
+The website for VNN-LIB. To edit simply open a PR updating the `index.html`.
