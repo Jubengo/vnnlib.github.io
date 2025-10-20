@@ -73,11 +73,10 @@
                 <div class="divider-custom-icon"><i class="fas fa-caret-down"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Masthead Avatar Image<img class="masthead-avatar mb-5" src="assets/svg/neverlogo.svg" alt="NeVer Logo">
-            Masthead Subheading-->
-            <p class="pre-wrap masthead-subheading font-weight-light mb-0">The international standard for the Verification of Neural Networks</p>
+            <p class="pre-wrap masthead-subheading font-weight-light mb-0"> The international standard for the Verification of Neural Networks </p>
         </div>
     </header>
+
 	<section class="page-section" id="news">
         <div class="container">
             <!-- Contact Section Heading-->
@@ -95,6 +94,117 @@
                 <li> March 2025 - VNN-LIB 2.0 in development </li>
                 <li> July 2023 - VNN-LIB 1.0 released</li>
             </ul>
+        </div>
+    </section>
+    <section class="page-section bg-primary text-white mb-0" id="news">
+        <div class="container">            
+            <p class="font-weight-light mb-0">
+                The goal of the VNN-LIB standard is to promote greater interoperability and rigour in the formal verification of neural networks by providing:
+                <ol>
+                    <li> a syntax and semantics for satisfiability queries over neural networks </li>
+                    <li> a command-line interface for neural network solvers that answer these queries </li>
+                </ol>
+            </p>
+            <p>
+                As an example, consider the following VNN-LIB query
+                <pre class="bg-white">
+                    <code>
+                        ; Network declaration
+                        (declare-network f
+                            (declare-input  X float32 [2,2])
+                            (declare-output Y float32 [1])
+                        )
+
+                        ; Input bounds
+                        (assert (and (>= X[1,0] 0.0) (<= X[0,0] 1.0)))
+                        (assert (and (>= X[0,1] 0.0) (<= X[0,1] 1.0)))
+                        (assert (and (>= X[1,0] 0.0) (<= X[1,0] 1.0)))
+                        (assert (and (>= X[1,1] 0.0) (<= X[1,1] 1.0)))
+
+                        ; Output bounds
+                        (assert (or (<= Y[0] -3.0) (>= Y[0] 0.0)))
+                    </code>
+                </pre>
+            </p>
+        </div>
+    </section>
+
+    <!-- Libraries -->
+    <section class="page-section libraries" id="libraries">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <div class="text-center">
+                <h2 class="page-section-heading text-secondary mb-0 d-inline-block">Libraries</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-clipboard-list"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p> A selection of official libraries and packages related to the VNN-LIB standard.</p>
+            <!-- Portfolio Grid Items-->
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a target="_blank" href="https://onnx.ai">C++</a>
+                            </h4>
+                            <p class="card-text">
+                                <span class="badge badge-secondary">parser</span>
+                                </br>
+                                </br>A C++ library for parsing VNN-LIB files.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a target="_blank" href="https://onnx.ai">Python</a>
+                            </h4>
+                            <p class="card-text">
+                                <span class="badge badge-secondary">parser</span>
+                                </br>
+                                </br>A Python package for parsing VNN-LIB files.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a target="_blank" href="https://onnx.ai">Julia</a>
+                            </h4>
+                            <p class="card-text">
+                                <span class="badge badge-secondary">parser</span>
+                                </br>
+                                </br>A Julia package for parsing VNN-LIB files.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a target="_blank" href="https://onnx.ai">Agda</a>
+                            </h4>
+                            <p class="card-text">
+                                <span class="badge badge-secondary">parser</span>
+                                </br>
+                                </br>
+                                A library in the Agda theorem prover for parsing VNN-LIB files. 
+                                Also contains a mechanised definition of the semantics of a subset of VNN-LIB queries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -138,104 +248,33 @@
         </div>
     </section>
 
-    <!-- TOOLING -->
-    <section class="page-section libraries" id="libraries">
+    <!-- Solvers -->
+    <section class="page-section" id="solvers">
         <div class="container">
             <!-- Portfolio Section Heading-->
             <div class="text-center">
-                <h2 class="page-section-heading text-secondary mb-0 d-inline-block">Libraries</h2>
+                <h2 class="page-section-heading mb-0 d-inline-block">Solvers</h2>
             </div>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-clipboard-list"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <p> A selection of official libraries and packages related to the VNN-LIB standard.</p>
-            <!-- Portfolio Grid Items-->
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a target="_blank" href="https://onnx.ai">C++ parser</a>
-                            </h4>
-                            <p class="card-text">
-                                <span class="badge badge-secondary">parser</span>
-                                </br>
-                                </br>A C++ library for parsing VNN-LIB files.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a target="_blank" href="https://onnx.ai">Python parser</a>
-                            </h4>
-                            <p class="card-text">
-                                <span class="badge badge-secondary">parser</span>
-                                </br>
-                                </br>A Python package for parsing VNN-LIB files.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a target="_blank" href="https://onnx.ai">Julia parser</a>
-                            </h4>
-                            <p class="card-text">
-                                <span class="badge badge-secondary">parser</span>
-                                </br>
-                                </br>A Julia package for parsing VNN-LIB files.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a target="_blank" href="https://onnx.ai">Agda parser</a>
-                            </h4>
-                            <p class="card-text">
-                                <span class="badge badge-secondary">parser</span>
-                                </br>
-                                </br>
-                                A library in the Agda theorem prover for parsing VNN-LIB files. 
-                                Also contains a mechanised definition of the semantics of a subset of VNN-LIB queries.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a target="_blank" href="https://github.com/vnnlib/benchmarks">Benchmarks</a>
-                                </h4>
-                                <p class="card-text">
-                                    <span class="badge badge-secondary">Benchmarks</span>
-                                </br></br>Our benchmarks repository from current research case studies.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <p> Solvers that are known to support VNN-LIB. If you would like to add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io">pull request</a>!</p>
+            <ul>
+                <li> Marabou (v1.0) </li>
+                <li> NNV (v1.0) </li>
+                <li> Pyrat (v1.0) </li>
+            </ul>
     </section>
 
-    <!-- Users -->
-    <section class="page-section bg-primary text-white" id="users">
+    <!-- PROJECTS SECTION -->
+    <section class="page-section bg-primary mb-0 portfolio" id="portfolio">
         <div class="container">
             <!-- Portfolio Section Heading-->
             <div class="text-center">
-                <h2 class="page-section-heading mb-0 d-inline-block">Users</h2>
+                <h2 class="page-section-heading text-white mb-0 d-inline-block">Related</h2>
             </div>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
@@ -243,35 +282,7 @@
                 <div class="divider-custom-icon"><i class="fas fa-clipboard-list"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <p> An incomplete list of tools known to use the VNN-LIB standard. If you would like to add your tool here, please open a PR at <a href="https://github.com/VNNLIB/vnnlib.github.io">here</a>!</p>
-            <!-- Portfolio Grid Items-->
-            <p> Solvers - tools that consume VNN-LIB query files </p>
-            <ul>
-                <li> Marabou (v1.0) </li>
-                <li> NNV (v1.0) </li>
-                <li> Pyrat (v1.0) </li>
-            </ul>
-
-            <p> Higher-level tools - tools that generate VNN-LIB query files</p>
-            <ul>
-                <li> Vehicle (v2.0) </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section class="page-section portfolio" id="portfolio">
-        <div class="container">
-            <!-- Portfolio Section Heading-->
-            <div class="text-center">
-                <h2 class="page-section-heading text-secondary mb-0 d-inline-block">Related projects</h2>
-            </div>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-clipboard-list"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <p class="text-white "> Related projects that are </p>
             <!-- Portfolio Grid Items-->
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
@@ -325,6 +336,19 @@
                             <p class="card-text">
                                 <span class="badge badge-secondary">Benchmarks</span>
                               </br></br>The benchmarks repository of the VNN competition - 2023.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a target="_blank" href="https://github.com/vnnlib/benchmarks">Benchmarks</a>
+                            </h4>
+                            <p class="card-text">
+                                <span class="badge badge-secondary">Benchmarks</span>
+                            </br></br>Our benchmarks repository from current research case studies.
                             </p>
                         </div>
                     </div>
