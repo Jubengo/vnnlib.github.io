@@ -1,0 +1,10 @@
+/* Stylesheet to override and extend existing styles.css */
+
+code {
+    color: var(--white) !important;
+    word-wrap: normal !important;
+}
+
+.bg-code {
+    background-color: var(--dark) !important;
+}
