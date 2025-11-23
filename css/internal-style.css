@@ -142,10 +142,28 @@ code {
     margin: 0.5rem 0;
 }
 
-.no-padding {
+.padding-sm {
     padding: 2em !important;
+}
+
+.bg-primary-split {
+    background: linear-gradient(to bottom, #008ae6 0%, #008ae6 50%, #ffffff 50%, #ffffff 100%); 
 }
 
 .libraries-header {
     margin-right: 3em;
-} 
+}
+
+.space-between {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.bg-secondary {
+    background-color: #020024 !important;
+}
+
+
+.bg-gradient {
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, #008ae6);
+}
