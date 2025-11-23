@@ -1,10 +1,127 @@
 /* Stylesheet to override and extend existing styles.css */
+:root {
+    --code-green: #009900; /* converted from rgb(0,0.6,0) */
+    --content-offset: 88px; /* space to account for fixed navbar */
+}
 
+/* Page content spacing so fixed-top navbar doesn't overlap content */
+#page-top + .content, .content {
+    margin-top: var(--content-offset);
+    padding: 2rem 1rem;
+}
+
+/* Masthead adjustments */
+.masthead {
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+}
+.masthead .masthead-heading {
+    letter-spacing: 0.02em;
+}
+
+/* Sections spacing */
+.page-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+/* Divider tweaks for better visual separation */
+.divider-custom .divider-custom-line {
+    height: 2px;
+    background-color: rgba(255,255,255,0.08);
+}
+.divider-custom .divider-custom-icon i {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.9);
+}
+
+/* Improve inline code and code blocks */
 code {
-    color: var(--white) !important;
+    color: var(--code-green) !important;
+    background: rgba(0,0,0,0.04);
+    padding: .05rem .35rem;
+    border-radius: .25rem;
+    font-size: .95em;
     word-wrap: normal !important;
 }
 
+/* Block code background and readable font */
 .bg-code {
     background-color: var(--dark) !important;
+    color: #e6f4ea;
+    padding: 1rem;
+    border-radius: .5rem;
+    overflow: auto;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: .95rem;
+}
+.bg-code code {
+    color: #dff0d8 !important; /* light green-tinted text on dark background */
+    background: transparent !important;
+    display: block;
+    white-space: pre-wrap;
+}
+
+/* Cards: slightly tighter and consistent title spacing */
+.card .card-title {
+    margin-bottom: .5rem;
+}
+.card .card-text {
+    color: rgba(0,0,0,0.75);
+}
+.card .card-title a {
+    color: var(--primary);
+    text-decoration: none;
+}
+.card .card-title a:hover {
+    text-decoration: underline;
+}
+
+/* Team member portrait refinement (finer size on small screens) */
+.team-member img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+/* Progress stepper tweaks */
+.vertical-progress-stepper {
+    max-width: 420px;
+    margin: 0 auto;
+    padding-left: 0;
+}
+.vertical-progress-stepper li {
+    padding: 0 0 20px 56px;
+    position: relative;
+}
+.vertical-progress-stepper li:after {
+    left: 0;
+    height: 24px;
+    width: 24px;
+}
+
+/* Small utility adjustments */
+.icon-contact i {
+    font-size: 1.35rem;
+    color: var(--primary);
+}
+
+/* Navbar shadow to separate from content */
+#mainNav {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Ensure footer image fits and looks consistent */
+.img-footer {
+    width: 12rem;
+    margin-top: -3.5rem;
+    margin-bottom: -3rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    :root { --content-offset: 64px; }
+    .masthead { padding-top: 3rem; }
+    .team-member img { width: 7.5rem; height: 7.5rem; }
+    .vertical-progress-stepper { padding-left: 0; }
 }
