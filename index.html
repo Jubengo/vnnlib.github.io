@@ -42,7 +42,11 @@
 
 <body id="page-top">
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">VNN-LIB</a>
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading mb-0">VNN-LIB</h1>
+            </a>
             <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
@@ -69,19 +73,25 @@
     </nav>
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Heading-->
-            <h1 class="masthead-heading mb-0">VNN-LIB</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-caret-down"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="pre-wrap masthead-subheading font-weight-light mb-0"> The international standard for the Verification of Neural Networks </p>
+            <p class="pre-wrap masthead-subheading font-weight-light mb-0"> The International Standard for the Verification of Neural Networks </p>
         </div>
     </header>
 
-	<section class="page-section" id="news">
+    <section class="page-section text-secondary mb-0 no-padding" id="news">
+        <div class="container side-stack">
+            <p class="font-weight-light mb-0">
+                Promotes greater interoperability and rigour in the formal verification of neural networks.
+            <p class="font-weight-light mb-0">
+                <ol>
+                    <li> A syntax and semantics for satisfiability queries over neural networks </li>
+                    <li> A command-line interface for neural network solvers that answer these queries </li>
+                </ol>
+            </p>
+        </div>
+    </section> 
+    <a href="#standard"><button class="btn"> View the standard now</button></a>
+
+    <section class="page-section" id="news">
         <div class="container">
             <!-- Contact Section Heading-->
             <div class="text-center">
@@ -101,56 +111,18 @@
             </ul>
         </div>
     </section>
-    <section class="page-section bg-primary text-white mb-0" id="news">
-        <div class="container">            
-            <p class="font-weight-light mb-0">
-                The goal of the VNN-LIB standard is to promote greater interoperability and rigour in the formal verification of neural networks by providing:
-                <ol>
-                    <li> a syntax and semantics for satisfiability queries over neural networks </li>
-                    <li> a command-line interface for neural network solvers that answer these queries </li>
-                </ol>
-            </p>
-            <p>
-                As an example, consider the following VNN-LIB query
-                <pre class="bg-code">
-                    <code>
-                        ; Network declaration
-                        (declare-network f
-                            (declare-input  X float32 [2,2])
-                            (declare-output Y float32 [1])
-                        )
-
-                        ; Input bounds
-                        (assert (and (>= X[1,0] 0.0) (<= X[0,0] 1.0)))
-                        (assert (and (>= X[0,1] 0.0) (<= X[0,1] 1.0)))
-                        (assert (and (>= X[1,0] 0.0) (<= X[1,0] 1.0)))
-                        (assert (and (>= X[1,1] 0.0) (<= X[1,1] 1.0)))
-
-                        ; Output bounds
-                        (assert (or (<= Y[0] -3.0) (>= Y[0] 0.0)))
-                    </code>
-                </pre>
-            </p>
-        </div>
-    </section>
 
     <!-- Libraries -->
-    <section class="page-section libraries" id="libraries">
-        <div class="container">
+    <section class="page-section libraries bg-primary" id="libraries">
+        <div class="container side-stack">
             <!-- Portfolio Section Heading-->
-            <div class="text-center">
-                <h2 class="page-section-heading text-secondary mb-0 d-inline-block">Libraries</h2>
+            <div class="text-center libraries-header">
+                <h2 class="page-section-heading text-white mb-0 d-inline-block">Libraries</h2>
+                <p class="text-white"> A selection of official libraries and packages related to the VNN-LIB standard.</p>
             </div>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-clipboard-list"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p> A selection of official libraries and packages related to the VNN-LIB standard.</p>
             <!-- Portfolio Grid Items-->
             <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="col-lg-6 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -164,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="col-lg-6 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -178,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="col-lg-6 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -192,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="col-lg-6 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
