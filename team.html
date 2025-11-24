@@ -39,8 +39,6 @@
     <link rel="stylesheet" href="css/internal-style.css">
     <link rel="stylesheet" href="css/progress-stepper.css">
 </head>
-
-
 <body id="page-top">
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
         <div class="container">
@@ -65,50 +63,93 @@
     </nav>
     <header class="masthead bg-gradient text-white text-center">
         <div class="container d-flex align-items-center flex-column">
-            <p class="pre-wrap masthead-subheading font-weight-light mb-0"> The International Standard for the Verification of Neural Networks </p>
-            <p class="font-weight-light mb-0"><i>Promoting greater interoperability and rigour in the formal verification of neural networks.</i> </p> 
+            <p class="pre-wrap masthead-subheading font-weight-light mb-0"> The VNN-LIB Team </p>
         </div>
     </header>
-    
-    <section class="page-section bg-primary text-white mb-0" id="standard">
+
+
+    <section class="page-section" id="team">
         <div class="container">
-            <!-- About Section Heading-->
+            <!-- Contact Section Heading-->
             <div class="text-center">
-                <h2 class="page-section-heading d-inline-block text-white">Standard</h2>
+                <h2 class="page-section-heading text-secondary d-inline-block mb-0">Team</h2>
             </div>
             <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
+            <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-file"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-users"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- About Section Content-->
-            <div class="text-center">
-                <p class="lead font-weight-light mb-0">
-                    The VNN-LIB standard - version 1.0.<br/>
-                    This document refers to the paper presented at FoMLAS 2023: S. Demarchi, D. Guidotti, L. Pulina and A. Tacchella,<br/>
-                    <i>Supporting Standardization of Neural Networks Verification with VNN-LIB and CoCoNet</i><br/><br/>
-                    <!--<a target="_blank" class="divider-custom-icon" href="bibtex.html"><button class="btn">BibTeX</button></a><br/><br/>-->
-                </p>
-
-                <!-- Standard Container Content -->
-                <div class="text-center">
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.js"></script>
-                    <div id="canvas-arrow-container">
-                        <div id="left-arrow" class="inactive-arrow"><i class="fas fa-arrow-circle-left"></i></div>
-                        <canvas id="slide-canvas" class="canvas"></canvas>
-                        <div id="right-arrow" class="active-arrow"><i class="fas fa-arrow-circle-right"></i></div>
+            <!-- Contact Section Content-->
+			<div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/at.jpg" alt="..." />
+                        <h4>Armando Tacchella</h4>
+                        <p class="text-muted">Full Professor | UniGE</p>
                     </div>
                 </div>
-
-                <!-- Download button -->
-                <div>
-                </br></br>
-                <a href="assets/doc/standard.pdf" class="divider-custom-icon" download="Abstraction slides"><button class="btn"><i class="fa fa-download"></i> Download document</button></a>
+				        <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/lp.jpg" alt="..." />
+                        <h4>Luca Pulina</h4>
+                        <p class="text-muted">Full Professor | UniSS</p>
+                    </div>
+                </div>
+				        <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/dg.jpg" alt="..." />
+                        <h4>Dario Guidotti</h4>
+                        <p class="text-muted">Post-Doc Researcher | UniSS</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/sd.jpg" alt="..." />
+                        <h4>Stefano Demarchi</h4>
+                        <p class="text-muted">Post-Doc Researcher | UniGE</p>
+                    </div>
+                </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="mailto:nevertools_at_googlegroups.com"><div class="icon-contact mb-3"><i class="far fa-envelope"></i></div></a>
+                        <div class="text-muted">Email</div><a class="lead font-weight-bold"
+                            href="mailto:nevertools_at_googlegroups.com">nevertools _at_ googlegroups.com</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+	<footer class="footer text-center">
+		<div class="container">
+			 <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="mb-4"></h4>
+                    <p class="pre-wrap lead mb-0"> </p>
+                </div>
+				<div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="mb-4">Powered by AIMS-Lab</h4>
+					<a target="_blank" href="http://www.aimslab.org">
+						<img class="img-footer" src="assets/svg/unige.svg" alt="UniGE">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <!-- Copyright Section -->
+    <section class="copyright py-4 text-center text-white">
+        <div class="container"><small class="pre-wrap"><a target="_blank" href="https://github.com/NeVerTools/NeVerTools.github.io/blob/master/LICENSE">MIT Licensed</a> | vnnlib.org 2023 | Hosted with ❤ by <a href="https://github.com/" target="_blank">GitHub</a></small></div>
+    </section>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed"><a
+            class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+                class="fa fa-chevron-up"></i></a></div>
+
 
     <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
