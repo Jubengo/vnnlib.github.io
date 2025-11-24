@@ -146,12 +146,20 @@ code {
     padding: 2em !important;
 }
 
+.padding-none {
+    padding: 0 !important;
+}
+
 .bg-primary-split {
     background: linear-gradient(to bottom, #008ae6 0%, #008ae6 50%, #ffffff 50%, #ffffff 100%); 
 }
 
-.libraries-header {
+.left-header {
     margin-right: 3em;
+}
+
+.right-header {
+    margin-left: 3em;
 }
 
 .space-between {
@@ -163,7 +171,19 @@ code {
     background-color: #020024 !important;
 }
 
+.text-secondary {
+    color:  #020024 !important;
+}
 
 .bg-gradient {
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, #008ae6);
+}
+
+.link-secondary {
+    color: #dcf2ff !important;
+}
+
+.space-sides {
+    margin-left: 2em;
+    margin-right: 2em;
 }

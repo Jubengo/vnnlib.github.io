@@ -52,17 +52,8 @@
                 aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#news">News</a>
-                    </li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#libraries">Libraries</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="standard.html">Standard</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#team">Team</a>
+                            href="#standard">Standard</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#team">Related</a>
@@ -79,22 +70,22 @@
     </header>
 
     <section class="bg-primary-split">
-        <div class="container description card text-secondary">
-                <p>The VNN-LIB standard provides SYNTAX and SEMANTICS to express satisfiability queries over neural networks, and a command-line interface for neural network solvers that answer these queries.</p>
-            </div>
+        <div class="container card text-secondary">
+            <p>The VNN-LIB Standard provides syntax and semantics to express satisfiability queries over neural networks, and a command-line interface for neural network solvers that answer these queries. <a href="#standard">See the Standard Document</a>.</p>
+        </div>
     </section>
 
     <!-- Libraries -->
-    <section class="page-section libraries" id="libraries">
-        <div class="container side-stack">
+    <section class="page-section libraries">
+        <div class="container">
             <!-- Portfolio Section Heading-->
-            <div class="text-center libraries-header">
+            <div class="text-center left-header">
                 <h2 class="page-section-heading mb-0 d-inline-block">Libraries</h2>
                 <p> A selection of official libraries and packages related to the VNN-LIB standard.</p>
             </div>
             <!-- Portfolio Grid Items-->
             <div class="row">
-                <div class="col-lg-6 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -108,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -122,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -136,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -152,6 +143,35 @@
                         </div>
                     </div>
                 </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solvers -->
+    <section class="page-section padding-sm">
+        <div class="container side-stack">
+            <ul class="vertical-progress-stepper">
+                <li> November 2025 - VNN-LIB 2.0 released </li>
+                <li> March 2025 - VNN-LIB 2.0 in development </li>
+                <li> July 2023 - VNN-LIB 1.0 released</li>
+            </ul>
+             <div class="card h-100">
+                <!-- Portfolio Section Heading-->
+                <div class="card-body">
+                    <h2 class="page-section-heading mb-0 d-inline-block">Solvers</h2>
+                    <p> Solvers that are known to support VNN-LIB.</p>
+                    
+                    <p class="card-text">
+                        <span class="badge badge-secondary">version 1.0</span>
+                        
+                    </p>
+                    <ul>
+                        <li><a target="_blank" href="https://github.com/NeuralNetworkVerification/Marabou">Marabou</a></li>
+                        <li><a target="_blank" href="https://github.com/verivital/nnv">NNV</a></li>
+                        <li><a target="_blank" href="https://pyrat-analyzer.com/">Pyrat</a></li>
+                    </ul>
+                    <p><i>If you would like to add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io" class="text-secondary">pull request</a>!</i></p>
                 </div>
             </div>
         </div>
@@ -197,43 +217,15 @@
         </div>
     </section>
 
-    <!-- Solvers -->
-    <section class="page-section" id="solvers">
-        <div class="container">
-            <!-- Portfolio Section Heading-->
-            <div class="text-center">
-                <h2 class="page-section-heading mb-0 d-inline-block">Solvers</h2>
-            </div>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p> Solvers that are known to support VNN-LIB. If you would like to add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io">pull request</a>!</p>
-            <ul>
-                <li> Marabou (v1.0) </li>
-                <li> NNV (v1.0) </li>
-                <li> Pyrat (v1.0) </li>
-            </ul>
-    </section>
-
     <!-- PROJECTS SECTION -->
-    <section class="page-section bg-primary mb-0 portfolio" id="portfolio">
+    <section class="page-section mb-0 portfolio" id="portfolio">
         <div class="container">
-            <!-- Portfolio Section Heading-->
-            <div class="text-center">
-                <h2 class="page-section-heading text-white mb-0 d-inline-block">Related</h2>
-            </div>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-clipboard-list"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="text-white "> Related projects that are </p>
-            <!-- Portfolio Grid Items-->
             <div class="row">
+                <!-- Portfolio Section Heading-->
+                <div class="col-lg-4 col-sm-6 mb-4 text-center space-between">
+                    <h2 class="page-section-heading text-secondary d-inline-block">Related Projects</h2>
+                </div>
+                <!-- Portfolio Grid Items-->
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
@@ -303,27 +295,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="page-section" id="news">
-        <div class="container">
-            <!-- Contact Section Heading-->
-            <div class="text-center">
-                <h2 class="page-section-heading text-secondary d-inline-block mb-0">News</h2>
-            </div>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-envelope"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            
-            <ul class="vertical-progress-stepper">
-                <li> November 2025 - VNN-LIB 2.0 released </li>
-                <li> March 2025 - VNN-LIB 2.0 in development </li>
-                <li> July 2023 - VNN-LIB 1.0 released</li>
-            </ul>
         </div>
     </section>
 
