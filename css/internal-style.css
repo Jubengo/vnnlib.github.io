@@ -216,3 +216,9 @@ code {
 .bg-gray {
     background: rgba(0, 0, 0, .125);
 }
+
+.img-thumbnail{
+    border: none !important;
+    background: none !important;
+    padding: none !important;
+}
