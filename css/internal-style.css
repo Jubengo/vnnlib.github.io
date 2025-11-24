@@ -154,6 +154,14 @@ code {
     background: linear-gradient(to bottom, #008ae6 0%, #008ae6 50%, #ffffff 50%, #ffffff 100%); 
 }
 
+.bg-primary-light-split-vert {
+    background: linear-gradient(to left, #008ae63f 0%, #008ae63f 50%, #ffffff 50%, #ffffff 100%); 
+}
+
+.width-50 {
+    width: 50%;
+}
+
 .left-header {
     margin-right: 3em;
 }
@@ -180,11 +188,7 @@ code {
 }
 
 .bg-primary-light {
-    background: #008ae63f;
-}
-
-.bg-primary-light-1 {
-    background: #008ae6a1;
+    background: #008ae628;
 }
 
 .link-secondary {
