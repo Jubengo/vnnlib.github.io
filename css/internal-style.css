@@ -52,7 +52,7 @@ code {
 
 /* Block code background and readable font */
 .bg-code {
-    background-color: var(--dark) !important;
+    background-color: #020024 !important;
     color: #e6f4ea;
     padding: 1rem;
     border-radius: .5rem;
@@ -64,7 +64,7 @@ code {
     color: #dff0d8 !important; /* light green-tinted text on dark background */
     background: transparent !important;
     display: block;
-    white-space: pre-wrap;
+    white-space: pre-line;
 }
 
 /* Cards: slightly tighter and consistent title spacing */

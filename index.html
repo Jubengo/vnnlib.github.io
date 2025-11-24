@@ -53,13 +53,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#about">About</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#libraries">Libraries</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#standard">Standard</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#news">News</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#related">Related</a>
@@ -83,50 +83,44 @@
             <p>The VNN-LIB Standard provides syntax and semantics to express satisfiability queries over neural networks, and a command-line interface for neural network solvers that answer these queries. <a target="_blank" href="assets/doc/standard-v2.0.pdf">See the latest standard document</a>.</p>
         </div>
     </section>
-    
 
     <!-- About -->
-    <section class="page-section padding-sm" id="about">
+    <section class="page-section padding-sm" id="About">
         <div class="container">
             <div class="row">
-                <!-- Solvers -->
                 <div class="col-lg-6 col-sm-6 mb-4">
-                    <!-- Portfolio Section Heading-->
                     <div class="card-body">
-                        <h2 class="page-section-heading mb-0 d-inline-block">Solvers</h2>
-                        <p> Solvers that are known to support VNN-LIB.</p>
-                        
-                        <p class="card-text">
-                            <span class="badge badge-secondary">Tool</span>
-                            <span class="badge badge-secondary">version 1.0</span>
-                        </p>
-                        <ul>
-                            <li><a target="_blank" href="https://github.com/NeuralNetworkVerification/Marabou">Marabou</a></li>
-                            <li><a target="_blank" href="https://github.com/verivital/nnv">NNV</a></li>
-                            <li><a target="_blank" href="https://pyrat-analyzer.com/">Pyrat</a></li>
-                        </ul>
-                        <p><i>If you would like to add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io">pull request</a>!</i></p>
+                        <h2 class="page-section-heading mb-0 d-inline-block">About</h2>
+                        <div class="space-between">
+                            <p> The VNN-LIB standard is a format that is expressive, and rigorous to express neural network verification tasks. It also standardizes the interface to solvers, and formalizes the semantics of this format. Notable improvements of the tailored format include: </p>
+                            <ul>
+                                <li>The ability to express multiple networks, inputs, outputs, and hidden nodes.</li>
+                                <li>The reduced verbosity, and increased interpretability of the format.</li>
+                                <li>The formalisation of this format.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Solvers -->
-                <div class="col-lg-6 col-sm-6 mb-4">
-                    <!-- Portfolio Section Heading-->
-                    <div class="card-body">
-                        <h2 class="page-section-heading mb-0 d-inline-block">Solvers</h2>
-                        <p> Solvers that are known to support VNN-LIB.</p>
-                        
-                        <p class="card-text">
-                            <span class="badge badge-secondary">Tool</span>
-                            <span class="badge badge-secondary">version 1.0</span>
-                        </p>
-                        <ul>
-                            <li><a target="_blank" href="https://github.com/NeuralNetworkVerification/Marabou">Marabou</a></li>
-                            <li><a target="_blank" href="https://github.com/verivital/nnv">NNV</a></li>
-                            <li><a target="_blank" href="https://pyrat-analyzer.com/">Pyrat</a></li>
-                        </ul>
-                        <p><i>If you would like to add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io">pull request</a>!</i></p>
-                    </div>
+                <div class="col-lg-6 col-sm-6 mb-4 bg-code">
+                    <code>
+                        (vnnlib-version <2.0>)
+
+                        ; Network declaration
+                        (declare-network f
+                            (declare-input  X float32 [2,2])
+                            (declare-output Y float32 [1])
+                        )
+
+                        ; Input bounds
+                        (assert (and (>= X[1,0] 0.0) (<= X[0,0] 1.0)))
+                        (assert (and (>= X[0,1] 0.0) (<= X[0,1] 1.0)))
+                        (assert (and (>= X[1,0] 0.0) (<= X[1,0] 1.0)))
+                        (assert (and (>= X[1,1] 0.0) (<= X[1,1] 1.0)))
+
+                        ; Output bounds
+                        (assert (or (<= Y[0] -3.0) (>= Y[0] 0.0)))
+                    </code>
                 </div>
             </div>
              
@@ -314,6 +308,53 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="page-section padding-sm" id="About">
+        <div class="container">
+            <div class="row">
+                <!-- Solvers -->
+                <div class="col-lg-6 col-sm-6 mb-4">
+                    <!-- Portfolio Section Heading-->
+                    <div class="card-body">
+                        <h2 class="page-section-heading mb-0 d-inline-block">Solvers</h2>
+                        <p> Solvers that are known to support VNN-LIB.</p>
+                        
+                        <p class="card-text">
+                            <span class="badge badge-secondary">Tool</span>
+                            <span class="badge badge-secondary">version 1.0</span>
+                        </p>
+                        <ul>
+                            <li><a target="_blank" href="https://github.com/NeuralNetworkVerification/Marabou">Marabou</a></li>
+                            <li><a target="_blank" href="https://github.com/verivital/nnv">NNV</a></li>
+                            <li><a target="_blank" href="https://pyrat-analyzer.com/">Pyrat</a></li>
+                        </ul>
+                        <p><i>If you would like to add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io">pull request</a>!</i></p>
+                    </div>
+                </div>
+
+                <!-- Solvers -->
+                <div class="col-lg-6 col-sm-6 mb-4">
+                    <!-- Portfolio Section Heading-->
+                    <div class="card-body">
+                        <h2 class="page-section-heading mb-0 d-inline-block">Solvers</h2>
+                        <p> Solvers that are known to support VNN-LIB.</p>
+                        
+                        <p class="card-text">
+                            <span class="badge badge-secondary">Tool</span>
+                            <span class="badge badge-secondary">version 1.0</span>
+                        </p>
+                        <ul>
+                            <li><a target="_blank" href="https://github.com/NeuralNetworkVerification/Marabou">Marabou</a></li>
+                            <li><a target="_blank" href="https://github.com/verivital/nnv">NNV</a></li>
+                            <li><a target="_blank" href="https://pyrat-analyzer.com/">Pyrat</a></li>
+                        </ul>
+                        <p><i>If you would like to add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io">pull request</a>!</i></p>
+                    </div>
+                </div>
+            </div>
+             
         </div>
     </section>
 
