@@ -179,6 +179,14 @@ code {
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, #008ae6);
 }
 
+.bg-primary-light {
+    background: #008ae63f;
+}
+
+.bg-primary-light-1 {
+    background: #008ae6a1;
+}
+
 .link-secondary {
     color: #dcf2ff !important;
 }
@@ -186,4 +194,17 @@ code {
 .space-sides {
     margin-left: 2em;
     margin-right: 2em;
+}
+
+.unnumbered-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.indented {
+    margin-left: 2em;
+}
+
+.bg-gray {
+    background: rgba(0, 0, 0, .125);
 }

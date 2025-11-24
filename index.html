@@ -53,7 +53,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="standard.html">Standard</a>
+                            href="#libraries">Libraries</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#related">Related</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="team.html">Team</a>
@@ -71,12 +74,12 @@
 
     <section class="bg-primary-split">
         <div class="container card text-secondary">
-            <p>The VNN-LIB Standard provides syntax and semantics to express satisfiability queries over neural networks, and a command-line interface for neural network solvers that answer these queries. <a href="#standard">See the Standard Document</a>.</p>
+            <p>The VNN-LIB Standard provides syntax and semantics to express satisfiability queries over neural networks, and a command-line interface for neural network solvers that answer these queries. <a target="_blank" href="assets/doc/standard-v2.0.pdf">See the latest standard document</a>.</p>
         </div>
     </section>
 
     <!-- Libraries -->
-    <section class="page-section libraries">
+    <section class="page-section" id="libraries">
         <div class="container">
             <!-- Portfolio Section Heading-->
             <div class="text-center left-header">
@@ -94,7 +97,7 @@
                             <p class="card-text">
                                 <span class="badge badge-secondary">parser</span>
                                 </br>
-                                </br>A C++ library for parsing VNN-LIB files.
+                                </br>A C++ library for parsing VNN-LIB files. It contains a main parsing function for generating an AST from a VNN-LIB query, and utilities to transform the AST into other formats.
                             </p>
                         </div>
                     </div>
@@ -108,7 +111,7 @@
                             <p class="card-text">
                                 <span class="badge badge-secondary">parser</span>
                                 </br>
-                                </br>A Python package for parsing VNN-LIB files.
+                                </br>A Python package for parsing VNN-LIB files. This package implements python bindings for the C++ VNN-LIB parser.
                             </p>
                         </div>
                     </div>
@@ -122,7 +125,7 @@
                             <p class="card-text">
                                 <span class="badge badge-secondary">parser</span>
                                 </br>
-                                </br>A Julia package for parsing VNN-LIB files.
+                                </br>A Julia package for parsing VNN-LIB files. This package wraps the C++ VNN-LIB parser and exposes its functionality to Julia users.
                             </p>
                         </div>
                     </div>
@@ -148,8 +151,34 @@
         </div>
     </section>
 
+    <!-- Standard -->
+    <section class="page-section padding-sm" id="standard">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <div class="left-header">
+                <h2 class="page-section-heading mb-0 d-inline-block">Standard</h2>
+                <p> Released versions of the VNN-LIB standard.</p>
+            </div>
+            <!-- Portfolio Items-->
+             <div>
+                <ul class="unnumbered-list">
+                    <li>
+                        <b>The VNN-LIB standard: version 2.0,</b> November 2025. <a target="_blank" href="assets/doc/standard-v2.0.pdf">pdf</a> <span class="badge badge-secondary">latest</span>
+                        <p class="indented">by Armando Tacchella, Luca Pulina, Dario Guidotti, Stefano Demarchi, Matthew Daggitt, Allen Anthony, Ann Roy.</p>
+                    </li>
+                    <li>
+                        <b>The VNN-LIB standard: version 1.0,</b> November 2022. <a target="_blank" href="assets/doc/standard-v1.0.pdf">pdf</a>
+                        <p class="indented">by Armando Tacchella, Luca Pulina, Dario Guidotti, and Stefano Demarchi. <br>
+                            This document refers to the paper presented at FoMLAS 2023: S. Demarchi, D. Guidotti, L. Pulina and A. Tacchella, <i>Supporting Standardization of Neural Networks Verification with VNN-LIB and CoCoNet</i>
+                        </p>
+                    </li>
+                </ul>
+             </div>
+        </div>
+    </section>
+
     <!-- Solvers -->
-    <section class="page-section padding-sm">
+    <section class="page-section padding-sm" id="solvers">
         <div class="container side-stack">
             <ul class="vertical-progress-stepper">
                 <li> November 2025 - VNN-LIB 2.0 released </li>
@@ -163,27 +192,28 @@
                     <p> Solvers that are known to support VNN-LIB.</p>
                     
                     <p class="card-text">
+                        <span class="badge badge-secondary">Tool</span>
                         <span class="badge badge-secondary">version 1.0</span>
-                        
                     </p>
                     <ul>
                         <li><a target="_blank" href="https://github.com/NeuralNetworkVerification/Marabou">Marabou</a></li>
                         <li><a target="_blank" href="https://github.com/verivital/nnv">NNV</a></li>
                         <li><a target="_blank" href="https://pyrat-analyzer.com/">Pyrat</a></li>
                     </ul>
-                    <p><i>If you would like to add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io" class="text-secondary">pull request</a>!</i></p>
+                    <p><i>If you would like to add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io">pull request</a>!</i></p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="page-section mb-0 portfolio" id="related">
+    <section class="page-section mb-0 portfolio bg-primary-light" id="related">
         <div class="container">
             <div class="row">
                 <!-- Portfolio Section Heading-->
                 <div class="col-lg-4 col-sm-6 mb-4 text-center space-between">
-                    <h2 class="page-section-heading text-secondary d-inline-block">Related Projects</h2>
+                    <h2 class="page-section-heading text-secondary-inline-block">Related Projects</h2>
+                    <p class="text-secondary">Projects that are referenced to in both historically and currently in the development of the VNN-LIB standard.</p>
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="col-lg-4 col-sm-6 mb-4">
@@ -209,6 +239,7 @@
                             </h4>
                             <p class="card-text">
                                 <span class="badge badge-secondary">Properties</span>
+                                <span class="badge badge-secondary">version 1.0</span>
                               </br></br>An international initiative aimed at facilitating research
                                 and development in Satisfiability Modulo Theories (SMT).
                             </p>
@@ -236,6 +267,7 @@
                             </h4>
                             <p class="card-text">
                                 <span class="badge badge-secondary">Benchmarks</span>
+                                <span class="badge badge-secondary">version 1.0</span>
                               </br></br>The benchmarks repository of the VNN competition - 2023.
                             </p>
                         </div>
@@ -249,6 +281,7 @@
                             </h4>
                             <p class="card-text">
                                 <span class="badge badge-secondary">Benchmarks</span>
+                                <span class="badge badge-secondary">version 1.0</span>
                             </br></br>Our benchmarks repository from current research case studies.
                             </p>
                         </div>
@@ -333,7 +366,7 @@
 
     <!-- Copyright Section -->
     <section class="copyright py-4 text-center text-white">
-        <div class="container"><small class="pre-wrap"><a target="_blank" href="https://github.com/NeVerTools/NeVerTools.github.io/blob/master/LICENSE">MIT Licensed</a> | vnnlib.org 2023 | Hosted with ❤ by <a href="https://github.com/" target="_blank">GitHub</a></small></div>
+        <div class="container"><small class="pre-wrap"><a target="_blank" href="https://github.com/NeVerTools/NeVerTools.github.io/blob/master/LICENSE">MIT Licensed</a> | vnnlib.org 2025 | Hosted with ❤ by <a href="https://github.com/" target="_blank">GitHub</a></small></div>
     </section>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-to-top d-lg-none position-fixed"><a
