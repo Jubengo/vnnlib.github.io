@@ -21,7 +21,7 @@ body {
     padding-bottom: 3rem;
 }
 .masthead .masthead-heading {
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
 }
 
 /* Sections spacing */
@@ -41,7 +41,7 @@ body {
 }
 
 /* Improve inline code and code blocks */
-code {
+pre {
     color: var(--code-green) !important;
     background: rgba(0,0,0,0.04);
     padding: .05rem .35rem;
@@ -60,11 +60,10 @@ code {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: .95rem;
 }
-.bg-code code {
-    color: #dff0d8 !important; /* light green-tinted text on dark background */
+.bg-code pre {
+    color: #ffffff !important; /* light green-tinted text on dark background */
     background: transparent !important;
     display: block;
-    white-space: pre-line;
 }
 
 /* Cards: slightly tighter and consistent title spacing */
