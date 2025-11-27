@@ -153,10 +153,6 @@ pre {
     background: linear-gradient(to bottom, #008ae6 0%, #008ae6 50%, #ffffff 50%, #ffffff 100%); 
 }
 
-.bg-primary-light-split-vert {
-    background: linear-gradient(to left, #008ae628 0%, #008ae628 50%, #ffffff 50%, #ffffff 100%); 
-}
-
 .width-50 {
     width: 50%;
 }
@@ -191,7 +187,7 @@ pre {
 }
 
 .bg-primary-light {
-    background: #008ae628;
+    background: #008ae623;
 }
 
 .link-secondary {
@@ -220,4 +216,48 @@ pre {
     border: none !important;
     background: none !important;
     padding: none !important;
+}
+
+p {
+    font-size: 20px;
+}
+
+li {
+    font-size: 20px;
+}
+
+table {
+    font-size: 20px;
+}
+
+
+/* Minimal, non-invasive table styles — use the .table-basic class in HTML */
+.table-responsive-basic {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.table-basic {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+.table-basic th,
+.table-basic td {
+    padding: .5rem .75rem;
+    border: 1px solid rgba(0,0,0,0.08);
+    text-align: left;
+    vertical-align: middle;
+}
+.table-basic thead th {
+    font-weight: 700;
+    background: rgba(0,0,0,0.03);
+}
+.table-basic tbody tr:nth-child(odd) {
+    background: rgba(0,0,0,0.02);
+}
+@media (max-width: 768px) {
+    .table-basic th, .table-basic td {
+        white-space: nowrap;
+    }
 }

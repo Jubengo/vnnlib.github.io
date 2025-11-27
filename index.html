@@ -49,17 +49,17 @@
             </a>
             <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+                aria-expanded="false" afria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#libraries">Libraries</a>
+                            href="#news">News</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#standard">Standard</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#news">News</a>
+                            href="#libraries">Libraries</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#related">Related</a>
@@ -123,8 +123,64 @@
         </div>
     </section>
 
+    <section class="page-section" id="news">
+        <div class="container">
+            <div class="row">
+                <!-- News -->
+                <div class="col-lg-6 col-sm-6 mb-4 bg-primary-light">
+                    <!-- Portfolio Section Heading-->
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h2 class="page-section-heading mb-0 d-inline-block">Latest News</h2>
+                        </div>
+                        <div class="space-between">
+                            <ul class="vertical-progress-stepper">
+                                <li> November 28th 2025 - VNN-LIB 2.0 released </li>
+                                <li> November 11th 2022 - VNN-LIB 1.0 released</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Solvers -->
+                <div class="col-lg-6 col-sm-6 mb-4">
+                    <!-- Portfolio Section Heading-->
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h2 class="page-section-heading mb-0 d-inline-block">Solvers</h2>
+                        </div>
+                        <div class="space-between">
+                            <p> 
+                                Solvers that are known to support VNN-LIB. 
+                            </p>
+                            
+                            <table class="table-basic">
+                                <tr>
+                                    <th> Name </th>
+                                    <th> VNN-LIB Version </th>
+                                </tr>
+                                <tr>
+                                    <td> <a target="_blank" href="https://github.com/NeuralNetworkVerification/Marabou">Marabou</a> </td>
+                                    <td> 1.0 </td>
+                                </tr>
+                                <tr>
+                                    <td> <a target="_blank" href="https://github.com/verivital/nnv">NNV</a> </td>
+                                    <td> 1.0 </td>
+                                </tr>
+                                <tr>
+                                    <td> <a target="_blank" href="https://pyrat-analyzer.com/">Pyrat</a> </td>
+                                    <td> 1.0 </td>
+                                </tr>
+                            </table>
+                            <p>To add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io">pull request</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Standard -->
-    <section class="page-section  bg-primary-light" id="standard">
+    <section class="page-section bg-primary-light" id="standard">
         <div class="container">
             <!-- Portfolio Section Heading-->
             <div class="text-center">
@@ -135,7 +191,7 @@
 
                 <!-- Portfolio Items-->
                 <div class="align-items-center justify-content-center">
-                    <table>
+                    <table class="table-basic">
                         <tr>
                             <th>Document</th>
                             <th>Release date</th>
@@ -173,7 +229,7 @@
             </div>
             <!-- Portfolio Grid Items-->
             <div class="row">
-                <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="col-lg-6 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -190,7 +246,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="col-lg-6 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -207,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="col-lg-6 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -224,7 +280,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="col-lg-6 col-sm-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -243,63 +299,6 @@
                         </div>
                     </div>
                 </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="page-section padding-sm" id="news">
-        <div class="container bg-primary-light-split-vert">
-            <div class="row">
-                <!-- Solvers -->
-                <div class="col-lg-6 col-sm-6 mb-4">
-                    <!-- Portfolio Section Heading-->
-                    <div class="card-body">
-                        <div class="text-center">
-                            <h2 class="page-section-heading mb-0 d-inline-block">Solvers</h2>
-                        </div>
-                        <div class="space-between">
-                            <p> 
-                                Solvers that are known to support VNN-LIB. 
-                            </p>
-                            
-                            <table>
-                                <tr>
-                                    <th> Name </th>
-                                    <th> VNN-LIB Version </th>
-                                </tr>
-                                <tr>
-                                    <td> <a target="_blank" href="https://github.com/NeuralNetworkVerification/Marabou">Marabou</a> </td>
-                                    <td> 1.0 </td>
-                                </tr>
-                                <tr>
-                                    <td> <a target="_blank" href="https://github.com/verivital/nnv">NNV</a> </td>
-                                    <td> 1.0 </td>
-                                </tr>
-                                <tr>
-                                    <td> <a target="_blank" href="https://pyrat-analyzer.com/">Pyrat</a> </td>
-                                    <td> 1.0 </td>
-                                </tr>
-                            </table>
-                            <p>To add a solver to this list, please open a <a href="https://github.com/VNNLIB/vnnlib.github.io">pull request</a>.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Solvers -->
-                <div class="col-lg-6 col-sm-6 mb-4">
-                    <!-- Portfolio Section Heading-->
-                    <div class="card-body">
-                        <div class="text-center">
-                            <h2 class="page-section-heading mb-0 d-inline-block">Latest News</h2>
-                        </div>
-                        <div class="space-between">
-                            <ul class="vertical-progress-stepper">
-                                <li> November 28th 2025 - VNN-LIB 2.0 released </li>
-                                <li> November 11th 2022 - VNN-LIB 1.0 released</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -394,42 +393,25 @@
 
     <section class="page-section" id="team">
         <div class="container">
+            <!-- Main heading + contact icons -->
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="page-section-heading mb-0 d-inline-block">Team</h2>
+                    <br>
+                    <a class="lead font-weight-bold" target="_blank" href="https://github.com/VNNLIB"><i class="fab fa-github"></i></a>
+                    <a class="lead font-weight-bold" href="mailto:matthew.daggitt@uwa.edu.au"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Current Team -->
             <div class="row">
-            
-                <div class="col-lg-3 col-sm-6 mb-4 d-flex align-items-center justify-content-center">
-                    <div class="text-center">
-                        <h2 class="page-section-heading text-secondary d-inline-block mb-0">Current Team</h2>
-                        <br>
-                        <a class="lead font-weight-bold" target="_blank" href="https://github.com/VNNLIB"><i class="fab fa-github"></i></a>
-                        <a class="lead font-weight-bold" href="mailto:matthew.daggitt@uwa.edu.au"><i class="far fa-envelope"></i></a>
-                    </div>
+                <div class="col-12 text-center">
+                    <h5 class="mb-0 d-inline-block">Current Team</h5>
                 </div>
+            </div>
 
-                <div class="col-lg-3 col-sm-6 mb-4">
-                    <div class="team-member text-center">
-                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/at.jpg" alt="Armando Tacchella" />
-                        <h4>Armando Tacchella</h4>
-                        <p class="text-muted">Full Professor | UniGE</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 mb-4">
-                    <div class="team-member text-center">
-                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/lp.jpg" alt="Luca Pulina" />
-                        <h4>Luca Pulina</h4>
-                        <p class="text-muted">Full Professor | UniSS</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 mb-4">
-                    <div class="team-member text-center">
-                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/dg.jpg" alt="Dario Guidotti" />
-                        <h4>Dario Guidotti</h4>
-                        <p class="text-muted">Post-Doc Researcher | UniSS</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="row mt-3">
+                <div class="col-sm-6 col-md-4 col-lg mb-4">
                     <div class="team-member text-center">
                         <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/sd.jpg" alt="Stefano Demarchi" />
                         <h4>Stefano Demarchi</h4>
@@ -437,30 +419,73 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6 mb-4">
+
+                <div class="col-sm-6 col-md-4 col-lg mb-4">
                     <div class="team-member text-center">
-                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/lp.jpg" alt="Luca Pulina" />
+                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/placeholder.png" alt="Andrea Gimelli" />
+                        <h4>Andrea Gimelli</h4>
+                        <p class="text-muted">Post-Doc Researcher | UniGE</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg mb-4">
+                    <div class="team-member text-center">
+                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/aa.jpg" alt="Allen Anthony" />
                         <h4>Allen Anthony</h4>
-                        <p class="text-muted">Full Professor | UniSS</p>
+                        <p class="text-muted"> Post-Grad | University of Western Australia</p>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="col-sm-6 col-md-4 col-lg mb-4">
                     <div class="team-member text-center">
-                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/lp.jpg" alt="Luca Pulina" />
+                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/ar.jpg" alt="Ann Roy" />
                         <h4>Ann Roy</h4>
-                        <p class="text-muted">Full Professor | UniSS</p>
+                        <p class="text-muted"> Post-Grad | University of Western Australia</p>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="col-sm-6 col-md-4 col-lg mb-4">
                     <div class="team-member text-center">
-                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/md.jpg"/>
+                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/md.jpg" alt="Matthew Daggitt" />
                         <h4>Matthew Daggitt</h4>
                         <p class="text-muted">Lecturer | University of Western Australia</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Past Team -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <h5 class="mb-0 d-inline-block">Past Team</h5>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="team-member text-center">
+                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/at.jpg" alt="Armando Tacchella" />
+                        <h4>Armando Tacchella</h4>
+                        <p class="text-muted">Full Professor | UniGE</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="team-member text-center">
+                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/lp.jpg" alt="Luca Pulina" />
+                        <h4>Luca Pulina</h4>
+                        <p class="text-muted">Full Professor | UniSS</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="team-member text-center">
+                        <img class="mx-auto rounded-circle img-thumbnail" src="assets/img/team/dg.jpg" alt="Dario Guidotti" />
+                        <h4>Dario Guidotti</h4>
+                        <p class="text-muted">Post-Doc Researcher | UniSS</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
