@@ -241,6 +241,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1rem;
+    background-color: white;
 }
 .table-basic th,
 .table-basic td {
